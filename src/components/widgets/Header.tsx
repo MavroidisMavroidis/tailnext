@@ -5,7 +5,8 @@ import { IconRss } from '@tabler/icons-react';
 import { useOnClickOutside } from '~/hooks/useOnClickOutside';
 import ToggleDarkMode from '~/components/atoms/ToggleDarkMode';
 import Link from 'next/link';
-import Logo from '~/components/atoms/Logo';
+import Image from 'next/image';
+import Logo from '~/assets/images/Logo1+Transparent.png';
 import ToggleMenu from '../atoms/ToggleMenu';
 import { headerData } from '~/shared/data/global.data';
 import CTA from '../common/CTA';
@@ -77,7 +78,14 @@ const Header = () => {
               isToggleMenuOpen ? handleToggleMenuOnClick() : setIsDropdownOpen(updatedIsDropdownOpen as boolean[])
             }
           >
-            <Logo />
+          <Image
+            src={Logo}
+            className="ml-2 self-center whitespace-nowrap max-h-16 md:max-h-24 min-w-[100px] min-h-[100px] object-contain" // Added object-fit
+            sizes="(max-width: 900px) 400px, 900px"
+            alt="Resilient Wellness Logo"
+            loading="eager"
+            priority
+          />
           </Link>
           <div className="flex items-center md:hidden">
             <ToggleMenu handleToggleMenuOnClick={handleToggleMenuOnClick} isToggleMenuOpen={isToggleMenuOpen} />

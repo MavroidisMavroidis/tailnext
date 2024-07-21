@@ -302,7 +302,7 @@ type TeamProps = Widget & {
 };
 
 type AnnouncementProps = {
-  title: string;
+  title?: string;
   callToAction?: CallToActionType;
   callToAction2?: CallToActionType;
 };

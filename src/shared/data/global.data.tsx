@@ -10,54 +10,114 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
-  title: 'NEW',
+  // title: 'New',
   callToAction: {
-    text: 'This template is made with Next.js 14 using the new App Router »',
+    text: 'Wondering if Therapy is Right for You? Click here to Schedule Your Free 15 Minute Consult Today!',
     href: 'https://nextjs.org/blog/next-14',
   },
-  callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
-  },
+  // callToAction2: {
+  //   text: 'Follow @onWidget on Twitter',
+  //   href: 'https://twitter.com/intent/user?screen_name=onwidget',
+  // },
 };
 
 // Header data
 export const headerData: HeaderProps = {
   links: [
     {
-      label: 'Pages',
+      label: 'Therapists',
       icon: IconChevronDown,
       links: [
         {
-          label: 'Services',
+          label: 'Yiannoula Mavroidis',
           href: '/services',
         },
         {
-          label: 'Pricing',
+          label: 'Melissa Kalinowski',
           href: '/pricing',
         },
         {
-          label: 'About us',
+          label: 'Hayle Fisher',
+          href: '/about',
+        },
+        
+      ],
+    },
+    {
+      label: 'Specialities',
+      icon: IconChevronDown,
+      links: [
+        {
+          label: 'Adolescent',
+          href: '/services',
+        },
+        {
+          label: 'College Students',
+          href: '/pricing',
+        },
+        {
+          label: 'Young Professionals',
           href: '/about',
         },
         {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
+          label: 'Eating Disorders & Body Positivity',
+          href: '/contact', 
+        }
       ],
     },
+    {
+      label: 'Services',
+      icon: IconChevronDown,
+      links: [
+        {
+          label: 'Individual Therapy',
+          href: '/services',
+        },
+        {
+          label: 'Supervision & Mentorship',
+          href: '/pricing',
+        },
+        {
+          label: 'Speaking Engagement & Partnerships',
+          href: '/about',
+        },
+        
+      ],
+    },
+    // {
+    //   label: 'Pages',
+    //   icon: IconChevronDown,
+    //   links: [
+    //     {
+    //       label: 'Services',
+    //       href: '/services',
+    //     },
+    //     {
+    //       label: 'Pricing',
+    //       href: '/pricing',
+    //     },
+    //     {
+    //       label: 'About us',
+    //       href: '/about',
+    //     },
+    //     {
+    //       label: 'Contact us',
+    //       href: '/contact',
+    //     },
+    //     {
+    //       label: 'FAQs',
+    //       href: '/faqs',
+    //     },
+    //     {
+    //       label: 'Terms & Conditions',
+    //       href: '/terms',
+    //     },
+    //     {
+    //       label: 'Privacy Policy',
+    //       href: '/privacy',
+    //     },
+    //   ],
+    // },
     {
       label: 'Blog',
       href: '/blog',
@@ -69,13 +129,13 @@ export const headerData: HeaderProps = {
   ],
   actions: [
     {
-      text: 'Download',
+      text: 'Schedule an Appointment',
       href: 'https://github.com/onwidget/tailnext',
       targetBlank: true,
     },
   ],
   isSticky: true,
-  showToggleTheme: true,
+  showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
 };
